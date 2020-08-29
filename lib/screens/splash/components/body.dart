@@ -1,5 +1,6 @@
 import 'package:e_commerce_ui/constants.dart';
 import 'package:e_commerce_ui/components/default_button.dart';
+import 'package:e_commerce_ui/screens/sign_in/sign_in_screen.dart';
 import 'package:e_commerce_ui/screens/splash/components/splash_content.dart';
 import 'package:e_commerce_ui/size_config.dart';
 import 'package:flutter/material.dart';
@@ -69,8 +70,10 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
                       flex: 3,
                     ),
                     DefaultButton(
-                      text: "Register",
-                      onpress: () {},
+                      text: "Continue",
+                      onpress: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     Spacer(),
                   ],
