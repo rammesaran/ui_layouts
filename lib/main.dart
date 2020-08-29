@@ -1,8 +1,7 @@
 import 'package:e_commerce_ui/routes.dart';
+import 'package:e_commerce_ui/screens/splash/splash_screen.dart';
 import 'package:e_commerce_ui/theme.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/splash/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +17,7 @@ class MyApp extends StatelessWidget {
       theme: themeData(),
       //home: SplashScreen()
       initialRoute: SplashScreen.route,
+      //initialRoute: CompleteProfileScreen.routeName,
       routes: routes,
     );
   }

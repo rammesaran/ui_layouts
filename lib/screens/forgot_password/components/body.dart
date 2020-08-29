@@ -3,6 +3,7 @@ import 'package:e_commerce_ui/components/form_error.dart';
 import 'package:e_commerce_ui/components/no_account_text.dart';
 import 'package:e_commerce_ui/components/sufix_icons.dart';
 import 'package:e_commerce_ui/constants.dart';
+import 'package:e_commerce_ui/screens/signup/sign_up_screen.dart';
 import 'package:e_commerce_ui/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -116,7 +117,9 @@ class _ForGotPasswordTextFieldState extends State<ForGotPasswordTextField> {
             height: SizeConfig.screenHeight * 0.1,
           ),
           AccountCreation(
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, SignUpScreen.routeName);
+            },
           ),
         ],
       ),

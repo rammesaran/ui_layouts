@@ -1,3 +1,4 @@
+import 'package:e_commerce_ui/size_config.dart';
 import 'package:flutter/material.dart';
 
 const kPrimaryColor = Color(0xFFFF7643);
@@ -31,3 +32,32 @@ const String kPassNullError = "please enter your password";
 const String kshortPassError = "password is too short";
 
 const String kMatchPassError = "Passwords don't match";
+
+const String kNameNullError = "Please enter name";
+const String kPhoneNumberNullError = "Please enter your phone number";
+const String kAddressNullError = "Please enter address";
+
+final headingStyle = TextStyle(
+  fontSize: getProportionateScreenWidth(28),
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+  height: 1.5,
+);
+
+final inPutdecoration = InputDecoration(
+  contentPadding: EdgeInsets.symmetric(
+    vertical: getProportionateScreenWidth(15),
+  ),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+  border: outlineInputBorder(),
+);
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(
+      color: kTextColor,
+    ),
+  );
+}
